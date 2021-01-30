@@ -2,7 +2,7 @@
 # Note that all I2C accesses are wrapped in try clauses with repeats
 
 import smbus, time
- 
+
 bus = smbus.SMBus(1) # For revision 1 Raspberry Pi, change to bus = smbus.SMBus(0)
 
 pzaddr = 0x22 # I2C address of Picon Zero
@@ -84,9 +84,9 @@ def readInput (channel):
             except:
                 if (DEBUG):
                     print "Error in readChannel(), retrying"
-                
+
 #---------------------------------------------
-    
+
 #---------------------------------------------
 # Set configuration of selected output
 # 0: On/Off, 1: PWM, 2: Servo, 3: WS2812B
@@ -165,7 +165,7 @@ def updatePixels ():
         except:
             if (DEBUG):
                 print "Error in updatePixels(), retrying"
-                        
+
 #---------------------------------------------
 
 #---------------------------------------------

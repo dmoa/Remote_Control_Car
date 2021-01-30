@@ -38,7 +38,7 @@ def readkey(getchar_fn=None):
 # End of single character reading
 #======================================================================
 
-speed = 60
+speed = 1
 
 print "Tests the motors by using the arrow keys to control"
 print "Use , or < to slow down"
@@ -77,4 +77,4 @@ while True:
         break
 
 pz.cleanup()
-    
+
